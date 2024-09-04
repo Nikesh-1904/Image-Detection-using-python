@@ -1,66 +1,8 @@
-<img src="ref/4nypprdc.png"
-style="width:1.6875in;height:1.69792in" />
-
-> **<u>End Semester Project Report</u>**
->
-> On
->
-> **Edited** **Image** **Detection**
+> **Image** **Detection**
 >
 > **BY:**
 >
-> Sanshrav Arora (2021A7PS2690P)
->
-> **SUBMITTED** **TO:**
->
-> Prof. Raj Kumar Gupta
->
-> Department of Physics
->
-> Prepared in fulfillment of:
->
-> **Study-Oriented** **Project** **(PHY** **F266)**
->
-> **BIRLA** **INSTITUTE** **OF** **TECHNOLOGY** **&** **SCIENCE,**
-> **PILANI**
->
-> **(May** **2024)**
->
-> 1
-
-**Table** **of** **Contents:**
-
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-
-> 2
-
-**Acknowledgment:**
-
-I would like to extend my heartfelt gratitude to my mentor, **Prof.**
-**Raj** **Kumar** **Gupta**, for his invaluable guidance and unwavering
-support throughout the duration of my study oriented project. His
-expertise and insights were crucial in navigating the complex challenges
-and in shaping the successful outcomes of this endeavor. His patience
-and willingness to answer my questions, provide constructive feedback,
-and encourage critical thinking have been instrumental in my academic
-growth.
-
-I would also like to thank the entire **Department** **of** **Physics,**
-**BITS** **Pilani,** **Pilani** **campus**, for creating an enriching
-academic environment that fosters learning and research.
-
-> 3
+> Nikesh Gupta (2021B4A31509P)
 
 **Abstract:**
 
@@ -81,8 +23,6 @@ approach in detecting various types of image manipulations, and we
 provide a comparative analysis with existing methods. This study
 underscores the potential of our method as a valuable tool in combating
 the dissemination of fraudulent visual content in digital media.
-
-> 4
 
 **Introduction** **and** **Significance:**
 
@@ -119,7 +59,6 @@ efficiency of our model in identifying and classifying edited images,
 thereby contributing to the broader efforts to combat the spread of
 misleading or fraudulent visual content.
 
-> 5
 
 **Initial** **Attempt** **and** **Problem** **Encountered:**
 
@@ -145,7 +84,6 @@ and highlights in different directions. This complexity makes it
 difficult to determine a consistent baseline for what constitutes a
 "natural" light direction vector across different images.
 
-> 6
 
 <img src="ref/wqcojrpp.png"
 style="width:2.89583in;height:2.1875in" /><img src="ref/lpprj4hg.png"
@@ -177,7 +115,6 @@ of the image.
 
 **Edited** **Image** **and** **its** **ELA**
 
-> 7
 
 We can see in the edited image the blue and orange book is copied over
 and a dinosaur is added and in the ELA these areas have really bright
@@ -214,7 +151,6 @@ spots with high varience.
 > or more colorful regions when visualized. This ELA layer serves as a
 > map of potential manipulations within the image.
 >
-> 8
 >
 > <img src="ref/3hrmglja.png" style="width:5.02083in;height:4in" />d.
 >
@@ -248,7 +184,6 @@ spots with high varience.
 > weaknesses in the model. Reﬁne the model architecture and training
 > process based on these insights.
 >
-> 9
 
 **Solution** **Design:**
 
@@ -305,7 +240,6 @@ spots with high varience.
 > feature extraction enhances the model's ability to discern between
 > authentic and manipulated regions.
 >
-> 10
 >
 > b\. **Pooling** **Layer** **(1** **layer):** Down-sample feature maps,
 > preserving essential information while reducing computational
@@ -344,50 +278,12 @@ which can be seen in the Accuracy graph while training the model and the
 confusion matrix calculated by running the best model for the test data
 which is 20% of the data.
 
-> 11
-
 <img src="ref/ivzma1wq.png"
 style="width:6.02083in;height:3.77083in" /><img src="ref/gawwhbe5.png"
 style="width:5.90625in;height:3.69792in" />
 
 **Results** **for** **the** **sample** **test** **images:**
 
-||
-||
-||
-
-> 12
-
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-
-> 13
 
 White: correct classiﬁcation Red: wrong classiﬁcation.
 
@@ -399,8 +295,6 @@ The images classiﬁed in the ELA-CNN Model are limited to the dataset
 which contains only very bright and clean images. In real life photos
 can vary with lighting, can be noisy or blurry and the model sometimes
 fail to identify them or identiﬁes them with low probability.
-
-> 14
 
 <img src="ref/fdvvxjmx.png"
 style="width:5.84375in;height:4.09375in" />
@@ -424,8 +318,6 @@ from different angles. This technique, commonly used in medical imaging
 and other ﬁelds, was adapted to assess whether it could help in
 identifying inconsistencies typical of manipulated images.
 
-> 15
-
 <img src="ref/xmjhqpem.png" style="width:6.5in;height:4.42708in" /><img src="ref/jidvjxjl.png" style="width:6.5in;height:1.09375in" />
 
 <u>Challenges</u>: While theoretically promising, the application of
@@ -445,8 +337,6 @@ Calculating the FFT of an Image.
 
 > 1\. fft2 function: calculated the 2D fast fourier transform of the
 > image. 2. ffshift function: shifts the FFT to the origin.
->
-> 16
 
 <img src="ref/3b3po0fm.png"
 style="width:2.98958in;height:3.98958in" /><img src="ref/qdrepkzo.png"
@@ -465,8 +355,6 @@ and magnitude of edges in images, providing insights into the natural
 method by segmenting images into smaller regions, allowing for localized
 analysis of gradient histograms.
 
-> 17
-
 <img src="ref/lq5zkg5d.png"
 style="width:4.72917in;height:3.90625in" />
 
@@ -474,14 +362,12 @@ style="width:4.72917in;height:3.90625in" />
 > y direction. 2. And used the derivatives to calculate the magnitude
 > and direction.
 >
-> 18
 
 <img src="ref/vxwgpkwe.png" style="width:6.5in;height:1.25in" /><img src="ref/nmnj5s22.png"
 style="width:5.94792in;height:2.94792in" />
 
 **Image** **Gradient** **-** **Histogram** **of** **Real** **Image**
 
-> 19
 
 <img src="ref/zo1nbs2y.png" style="width:6.5in;height:1.09375in" /><img src="ref/4jl1h03b.png" style="width:5.96875in;height:3in" />
 
@@ -491,8 +377,6 @@ style="width:5.94792in;height:2.94792in" />
 size N\*M into c squared images of size (N/c)\*(M/c), and plotted the
 same gradient histograms.
 
-> 20
-
 <img src="ref/gpdoijma.png" style="width:6.5in;height:3.76042in" /><img src="ref/rzavpaun.png" style="width:6.5in;height:3.76042in" />
 
 **Segmentation** **of** **Images** **-** **Real** **image** **-**
@@ -501,8 +385,6 @@ same gradient histograms.
 **Segmentation** **of** **Images** **-** **Real** **image** **-**
 **Direction**
 
-> 21
-
 <img src="ref/v4fjayfh.png" style="width:6.5in;height:3.78125in" /><img src="ref/vlrkdog3.png" style="width:6.5in;height:3.78125in" />
 
 **Segmentation** **of** **Images** **-** **Fake** **image** **-**
@@ -510,8 +392,6 @@ same gradient histograms.
 
 **Segmentation** **of** **Images** **-** **Fake** **image** **-**
 **Direction**
-
-> 22
 
 **Conclusion:**
 
@@ -539,8 +419,6 @@ detection capabilities. The continued evolution of our methods will be
 crucial in keeping pace with the ever-advancing ﬁeld of image editing
 technologies.
 
-> 23
-
 **References:**
 
 > 1\. Dr. Jayasri Kotti, Dr. E. Gouthami, Dr. K. Swapna, Suneetha
@@ -555,4 +433,3 @@ technologies.
 > 3\. Gonzalez, R. C. & R. E. Woods, Digital Image Processing, Pearson
 > Education Asia.
 >
-> 24
